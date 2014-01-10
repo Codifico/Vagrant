@@ -1,3 +1,6 @@
 ip=33.33.33.66
 project=projectname
 use_nfs=true
+manifest_file=symfony-standard-devtools-mysql.pp
+manifests_path=vagrant/manifests
+module_path=vagrant/modules

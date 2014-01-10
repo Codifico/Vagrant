@@ -27,8 +27,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Configure Puppet
   config.vm.provision :puppet do |puppet|
-    puppet.manifests_path = "vagrant/manifests"
-    puppet.module_path = "vagrant/modules"
-    puppet.manifest_file  = "symfony-standard-minimal.pp"
+    puppet.manifests_path = parameters['manifests_path']
+    puppet.module_path = parameters['module_path']
+    puppet.manifest_file  = parameters['manifest_file']
   end
 end

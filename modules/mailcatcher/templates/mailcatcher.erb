@@ -1,0 +1,21 @@
+description "Mail Catcher"
+author "Marcin Dryka <marcin@codifico.pl>"
+
+# Ubuntu runlevels:
+# 0 System Halt
+# 1 Single user
+# 2 Full multi-user mode (Default)
+# 3-5 Same as 2
+# 6 System Reboot
+
+# When to start
+start on runlevel [2345]
+
+# When to stop
+stop on runlevel [016]
+
+# Automatically restart process if crashed
+respawn
+
+# Start the process
+exec /usr/local/bin/mailcatcher --http-ip <%= @ipaddress_eth1 %>

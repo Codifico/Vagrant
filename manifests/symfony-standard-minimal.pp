@@ -5,6 +5,7 @@ class {
   'php5-mysql':   stage => main;
   'php5-intl':    stage => main;
   'nginx':        stage => main;
+  'composer':     stage => main;
 }
 
 nginx::dev {'dev': }
