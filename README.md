@@ -5,7 +5,7 @@ Installation
 ------------
 
 ```bash
-git submodule add -b 0.1 --name vagrant git@bitbucket.org:codifico/vagrantconfiguration.git vagrant
+git submodule add -b 0.2 --name vagrant git@bitbucket.org:codifico/vagrantconfiguration.git vagrant
 ```
 
 ```bash
